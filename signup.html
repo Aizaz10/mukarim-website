@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(224 206 174);
+      margin: 9px 0px;
+      padding: 0px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      border: 8px solid #87591c;
+      background-color: #dea858;
+      border-radius: 20px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .set {
+      padding: 2rem;
+    }
+
+    #logo {
+      background-color: #f1faf8;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1%;
+    }
+
+    #logo img {
+      width: 4rem;
+    }
+
+    #personal input {
+      width: 40%;
+      margin-left: 4rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      border-color: black;
+    }
+
+    #personal form {
+      width: 20%;
+    }
+
+    #personal label {
+      font-size: 1.3rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .info {
+      padding: 0.7rem;
+    }
+
+    #pp {
+      display: flex;
+      margin: 1rem 0rem;
+      padding: 2rem;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f3ddc1;
+      color: black;
+
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      background-color: #f3ddc1;
+      color: black;
+      margin: 1rem 1rem;
+      padding: 1rem;
+    }
+
+    #per {
+      margin: 2px;
+      padding: 2px;
+    }
+
+    #marital_status {
+      display: inline-block;
+      width: 9rem;
+    }
+
+    #status-select {
+      width: 10%;
+      margin-left: 4.1rem;
+      margin-bottom: 1.3rem;
+    }
+
+    #button {
+      display: inline;
+      margin-left: 20%;
+    }
+
+    .buttons {
+      background-color: #000000;
+      color: #fff;
+      margin: 1%;
+      padding: 1.3% 3%;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buttons:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.5s;
+    }
+
+    #button a {
+      background-color: #000000;
+      color: #fff;
+      margin: 1%;
+      padding: 1.3% 3%;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #button a:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.5s;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .container {
+        max-width: 600px;
+      }
+
+      #personal form {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="logo" class="set">
+      <img src="logo.jpg" alt="">
+    </div>
+    <h2 class="set"><i>MUKARIM CLOTHING</i></h2>
+  </header>
+  <div>
+    <h2 id="pp">CREATE ACCOUNT</h2>
+  </div>
+  <div id="per">
+    <h3>PERSONAL INFORMATION</h3>
+    <form id="personal" action="">
+      <div class="info">
+        <label for="firstname">
+          <span>First Name</span>
+        </label>
+      </div>
+      <div>
+        <input type="text" name="firstname" id="firstname" placeholder="ENTER FIRST NAME" required>
+      </div>
+      <div class="info">
+        <label for="lastname">
+          <span>Last Name </span>
+        </label>
+      </div>
+      <div>
+        <input type="text" name="lastname" id="lastname" placeholder="ENTER LAST NAME" required>
+      </div>
+      <div class="info">
+        <label for="birthdate">
+          <span>Date of birth </span>
+        </label>
+      </div>
+      <div>
+        <input type="date" name="birthdate" id="birthdate" required>
+      </div>
+      <div class="info">
+        <label for="phone">
+          <span>PHONE NUMBER </span>
+        </label>
+      </div>
+      <div>
+        <input type="number" name="phone" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required />
+      </div>
+      <div class="info">
+        <label for="email">
+          <span>EMAIL </span>
+        </label>
+      </div>
+      <div>
+        <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL" required />
+      </div>
+      <div class="info">
+        <label for="password">
+          <span>CREATE PASSWORD </span>
+        </label>
+      </div>
+      <div>
+        <input type="password" name="password" id="password" placeholder="CREATE PASSWORD" required />
+      </div>
+      <div id="marital_status" class="info">
+        <label for="marital_status">
+          <span>Marital Status</span>
+        </label>
+      </div>
+      <div>
+        <select name="marital_status" id="status-select">
+          <option value="" selected="selected"></option>
+          <option value="">Married</option>
+          <option value="">Single</option>
+        </select>
+      </div>
+      <div id="button">
+        <a href="./index.html"> <-- Back</a>
+            <button type="submit" id="submit" class="buttons">Create Account</button>
+            <button type="reset" id="reset" class="buttons">reset</button>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+  </footer>
+</body>
+
+</html>

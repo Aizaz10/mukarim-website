@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(224 206 174);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #8b5904;
+            color: #fff;
+            padding: 1.1rem;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .set {
+            display: flex;
+            margin-top: -8.2rem;
+            padding: 0.8rem 0rem;
+            justify-content: center;
+        }
+
+        #logo {
+            background-color: #f1faf8;
+            border-radius: 50%;
+            padding: 3rem;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1%;
+            margin-top: 10px;
+        }
+
+        #logo img {
+            width: 5rem;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        nav ul li a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .review {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h3 {
+            margin-top: 0;
+        }
+
+        .review p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media only screen and (max-width: 740px) {
+            .set {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+            }
+
+            #logo {
+                margin-top: 10px;
+                margin-left: 35%;
+            }
+
+            #logo img {
+                width: 5rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="set">
+            <h1>Reviews</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./prmanage.html">manage products</a></li>
+                <li><a href="./history.html">order history</a></li>
+                <li><a href="./user.html">manage users</a></li>
+                <li><a href="./review.html">reviews</a></li>
+                <li><a href="./index.html">log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reviews</h1>
+            <div class="review">
+                <h3>Great product!</h3>
+                <p>I will consider buying products from your store again...</p>
+            </div>
+    
+            <div class="review">
+                <h3>Excellent service</h3>
+                <p>I am very impressed by product and also you have a great service management</p>
+            </div>
+    
+            <div class="review">
+                <h3>Could be better</h3>
+                <p>Products are very good but could be better in some things.</p>
+            </div>
+    </main>
+    <footer>
+        <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+    </footer>
+</body>
+
+</html>

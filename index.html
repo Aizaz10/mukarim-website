@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukarim Clothing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(224 206 174);
+      margin: 9px 0px;
+      padding: 0px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      border: 8px solid #87591c;
+      background-color: #dea858;
+      border-radius: 20px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .set {
+      padding: 2rem;
+    }
+
+    #logo {
+      background-color: #f1faf8;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1%;
+    }
+
+    #logo img {
+      width: 4rem;
+    }
+
+    header h2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.6rem;
+    }
+
+    .container {
+      max-width: 410px;
+      margin: 8rem auto;
+      background: #e1cfe2;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 20px 19px 8px 10px rgba(9, 9, 9, 0.1);
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .form-control label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-control input {
+      width: 95%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #checkbox {
+      margin-bottom: 1rem;
+    }
+
+    #login {
+      display: inline-block;
+      width: 46%;
+      padding: 7px;
+      border: none;
+      background: #208afc;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #login:hover {
+      background: #0056b3;
+    }
+
+    #signup {
+      display: inline-block;
+      width: 46%;
+      padding: 7px;
+      border: none;
+      background: #208afc;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #signup:hover {
+      background: #0056b3;
+    }
+
+    @media only screen and (max-width: 600px) {
+            header {
+                flex-direction: row;
+                align-items: center;
+                padding: 0.5rem;
+            }
+
+            #logo {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+
+            header h2 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                margin: 1rem;
+            }
+            #login{
+              width: 90%;
+            }
+
+            #signup{
+              width: 90%;
+              margin-top: 0.5rem;
+            }
+        }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="logo" class="set">
+      <img src="logo.jpg" alt="">
+    </div>
+    <h2 class="set"><i>MUKARIM CLOTHING</i></h2>
+  </header>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>LOGIN DETAILS</h2>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email">
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+      <div id="checkbox">
+        <input type="checkbox" name="rememberusername" id="rememberusername" value="1">
+        <label for="rememberusername">Remember me</label>
+      </div>
+      <a href="./admindashboard.html" id="login">Log in</a>
+      <a href="./signup.html" id="signup">Sign up</a>
+    </form>
+  </div>
+</body>
+
+</html>

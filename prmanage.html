@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(224 206 174);
+    }
+
+    header {
+      background-color: #8b5904;
+      color: #fff;
+      padding: 1.1rem;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .set {
+      display: flex;
+      margin-top: -8.2rem;
+      padding: 0.8rem 0rem;
+      justify-content: center;
+    }
+
+    #logo {
+      background-color: #f1faf8;
+      border-radius: 50%;
+      padding: 3rem;
+      width: 1rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1%;
+      margin-top: 10px;
+    }
+
+    #logo img {
+      width: 5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    main {
+      margin: 3% 1%;
+      padding: 20px;
+    }
+
+    .management a {
+      display: flex;
+      width: 70%;
+      height: 3rem;
+      margin-left: 14%;
+      padding: 1%;
+      border: none;
+      background: #d8b55f;
+      color: #19003d;
+      cursor: pointer;
+      border-radius: 2rem 2rem 5rem 5rem;
+      text-decoration: none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 1000;
+    }
+
+    .management :hover {
+      cursor: pointer;
+      height: 3.2rem;
+      background: #e6b334;
+      transition-duration: 0.4s;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin: -1rem;
+    }
+
+    @media only screen and (max-width: 760px) {
+      .set {
+        margin-top: -2.2rem;
+      }
+
+      #logo img {
+        width: 4rem;
+      }
+
+      .management a {
+        width: 65%;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 1rem 0;
+      }
+
+      #logo {
+        margin-left: 35%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="logo.jpg" alt="">
+    </div>
+    <div class="set">
+      <h1>Product Management</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./prmanage.html">manage products</a></li>
+        <li><a href="./history.html">order history</a></li>
+        <li><a href="./user.html">manage users</a></li>
+        <li><a href="./review.html">reviews</a></li>
+        <li><a href="./loginform.html">log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="management">
+      <a href="./addpr.html">Add products</a>
+    </section>
+
+    <section id="orders" class="management">
+      <a href="./viewpr.html">View your products</a>
+    </section>
+
+    <section id="users" class="management">
+      <a href="./admindashboard.html">open admin Dashboard</a>
+    </section>
+
+    <section id="logout" class="management">
+      <a href="./index.html">Log out</a>
+    </section>
+  </main>
+
+  <footer>
+    <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+  </footer>
+</body>
+
+</html>

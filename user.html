@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(224 206 174);
+        }
+
+
+        header {
+            background-color: #8b5904;
+            color: #fff;
+            padding: 1.1rem;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .set {
+            display: flex;
+            margin-top: -8.2rem;
+            padding: 0.8rem 0rem;
+            justify-content: center;
+        }
+
+        #logo {
+            background-color: #f1faf8;
+            border-radius: 50%;
+            padding: 3rem;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1%;
+            margin-top: 10px;
+        }
+
+        #logo img {
+            width: 5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .set {
+            display: flex;
+            margin-top: -8.2rem;
+            padding: 0.8rem 0rem;
+            justify-content: center;
+        }
+
+        #logo {
+            background-color: #f1faf8;
+            border-radius: 50%;
+            padding: 3rem;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1%;
+            margin-top: 10px;
+        }
+
+        #logo img {
+            width: 5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: flex;
+            margin-bottom: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        #user-list button {
+            display: flex;
+            background-color: rgb(0, 247, 66);
+            color: #000000;
+            margin-left: 10rem;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #user-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #user-list li {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #user-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        #user-list li:hover {
+            background-color: #f2f2f2;
+        }
+
+        #user-list li::before {
+            content: '\2022';
+            color: #8b5904;
+            margin-right: 5px;
+        }
+
+        #user-list li span {
+            font-weight: bold;
+            color: #8b5904;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .set {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+            }
+
+            #logo {
+                margin-top: 10px;
+                margin-left: 35%;
+            }
+
+            #logo img {
+                width: 5rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="set">
+            <h1>User Management</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./prmanage.html">manage products</a></li>
+                <li><a href="./history.html">order history</a></li>
+                <li><a href="./user.html">manage users</a></li>
+                <li><a href="./review.html">reviews</a></li>
+                <li><a href="./index.html">log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="user_list">
+            <h2>User List</h2>
+            <ul id="user-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+    </footer>
+    <script>
+        let users = [
+            { id: 1, username: 'playerfts', email: 'playerfts.123@gmail.com', enabled: true },
+            { id: 2, username: 'aizaz156', email: 'aizaz156@gmail.com', enabled: true },
+            { id: 3, username: 'terrificuser00', email: 'terrificuser00@gmail.com', enabled: true },
+            { id: 4, username: 'razar4', email: 'razar4@gmail.com', enabled: true },
+            { id: 5, username: 'btw-itz-awanahmed', email: 'btw-itz-awanahmed@gmail.com', enabled: true },
+            { id: 6, username: 'yyy789', email: 'yyy789@gmail.com', enabled: true },
+            { id: 7, username: 'userpurrrr777', email: 'userpurrrr777@gmail.com', enabled: true },
+            { id: 8, username: 'bhaiofbhai258', email: 'bhaiofbhai258@gmail.com', enabled: true },
+            { id: 9, username: 'cricketer56', email: 'cricketer56@gmail.com', enabled: true },
+        ];
+
+        function populateUserList() {
+            const userList = document.getElementById('user-list');
+
+            userList.innerHTML = '';
+
+            users.forEach(user => {
+                const li = document.createElement('li');
+                li.textContent = `Username: ${user.username}, Email: ${user.email}, Status: ${user.enabled ? 'Enabled' : 'Disabled'}`;
+
+                const enableButton = document.createElement('button');
+                enableButton.textContent = user.enabled ? 'Click to Disable' : 'Click to Enable';
+                enableButton.addEventListener('click', () => toggleUserStatus(user.id));
+                li.appendChild(enableButton);
+
+                userList.appendChild(li);
+            });
+        }
+        function toggleUserStatus(userId) {
+            const user = users.find(user => user.id === userId);
+            user.enabled = !user.enabled;
+            populateUserList();
+        }
+
+        window.addEventListener('DOMContentLoaded', populateUserList);
+    </script>
+</body>
+
+</html>
